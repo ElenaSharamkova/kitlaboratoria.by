@@ -1,0 +1,126 @@
+/* Страницы статей____*/
+.header-bg {
+	border-bottom: 1px solid var(--primary-color);
+}
+.breadcrumb {
+	padding: 30px 0px;
+}
+.breadcrumb ol {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 5px;
+}
+.breadcrumb li:not(:last-child)::after {
+  display: inline-block;
+  content: ">";
+  margin-left: 5px;
+  color: #000000;
+}
+.breadcrumb li {
+	text-transform: uppercase;
+	color:#707682;
+	font-size: 16px;
+}
+
+.breadcrumb li > a {
+	color: var(--primary-color);
+}
+.article__header {
+	margin-bottom: 20px;
+}
+
+.article-img {
+	max-width: 400px;
+	border-radius: 8px;
+	object-fit: cover;
+	box-shadow: -1px 4px 20px 12px rgba(34, 60, 80, 0.06);
+}
+.article__title {
+	font-size: 36px;
+}
+
+.article__section {
+	padding: 20px 0;
+	gap: 10px;
+}
+.article .img-box{
+	display: flex;
+	justify-content: space-between;
+	gap: 24px;
+	
+}
+.article__text {
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+.article__list-item {
+	font-size: 18px;
+	margin-bottom: 10px;
+	margin-left: 25px;
+}
+.article__list-item::before {
+	content: "";
+	display: inline-block;
+	background: url(../img/icons/chek.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 19px;
+	height: 19px;
+	margin-right: 8px;
+}
+.article__divider {
+	background-color: var(--primary-color);
+}
+.article__subtitle {
+	margin-bottom: 25px;
+	font-weight: 600;
+	font-size: 30px;
+	text-align: center;
+}
+.article__text-subtitle {
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 1.4;
+	margin-bottom: 12px;
+
+}
+.article__block {
+	margin-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.article__subheading {
+	font-size: 22px;
+	font-weight: 600;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+.article__highlight {
+	margin-bottom: 10px;
+	background-color: #214e9219;
+	border-radius: 18px;
+	padding: 10px 30px;
+	display: inline-block;
+	text-align: center;
+	align-self: flex-start;
+}
+.article__button {
+	display:inline-block;
+	background-color: var(--primary-color);
+	color: #ffffff;
+	font-size: 18px;
+	border-radius: 5px;
+	padding: 10px 30px;
+	transition: all 0.2s ease-in-out;
+	text-align: center;
+	margin: 20px 0;
+}
+.article__button:hover {
+	background-color: var(--txt-color);
+	transform: translateY(-3px);
+}
+
+/*_____ Страницы статей*/
