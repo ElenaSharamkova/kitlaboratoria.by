@@ -263,3 +263,45 @@ function initCookieBanner() {
     }, 300);
   });
 }
+
+
+//Модальноне окно 
+
+const wrapper = document.querySelector('[data-modal-wrapper]');
+const openBtns = document.querySelectorAll('[data-path]');
+const closeBtns = document.querySelectorAll('[data-modal-close]');
+
+function openModal(target) {
+  const modal = document.querySelector(`[data-target="${target}"]`);
+  if (!modal || !wrapper) return;
+  wrapper.classList.add('modal-wrapper--open');
+  modal.removeAttribute('hidden');
+  document.body.classList.add('no-scroll');
+}
+
+function closeModal() {
+  wrapper.classList.remove('modal-wrapper--open');
+  const activeModal = wrapper.querySelector('[data-target]');
+  if (activeModal) {
+    activeModal.setAttribute('hidden', '');
+  }
+  document.body.classList.remove('no-scroll');
+}
+
+openBtns.forEach(btn => {
+  btn.addEventListener('click', () => openModal(btn.dataset.path));
+});
+
+closeBtns.forEach(btn => {
+  btn.addEventListener('click', closeModal);
+});
+
+wrapper.addEventListener('click', e => {
+  if (e.target === wrapper) closeModal();
+});
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && wrapper.classList.contains('modal-wrapper--open')) {
+    closeModal();
+  }
+});

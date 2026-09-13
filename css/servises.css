@@ -1,7 +1,19 @@
 /* Страницы услуг____ */
+ .menulink {
+	transition: 0.3s all ease-in-out;
+	color: #111;
+}
+.menulink:visited{
+	color: #222222;
+}
+.menulink:hover {
+	color: var(--primary-color);
+} 
+
 .header-bg {
 	border-bottom: 1px solid var(--primary-color);
 }
+
 .breadcrumb {
 	padding: 30px 0px;
 }
@@ -55,7 +67,7 @@ margin-bottom: 16px;
 
 .accordion-header {
 	width: 100%;
-  padding: 22px 24px;
+  padding: 22px 24px 14px 24px;
   font-size: 18px;
   font-weight: 500;
   background: none;
@@ -121,6 +133,7 @@ margin-bottom: 16px;
 }
 .inner-item {
 	margin-bottom: 8px;
+	font-size: 18px;
 }
 .inner-item::before {
 	content: "";

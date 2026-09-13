@@ -110,6 +110,37 @@
 						Работаем по всей Беларуси.</h2>
 					<div class="btn-block">
 						<a class="hero-button" href="#contact">Оставить заявку</a>
+						<button class="hero-button btn_color" data-path="modal-1">связаться с нами </button>
+					</div>
+				</div>
+				<div class="modal-wrapper" data-modal-wrapper hidden>
+					<div class="modal" role="dialog" aria-modal="true" data-target="modal-1" hidden>
+						<button class="modal__close" data-modal-close aria-label="Закрыть окно">
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M15 5L5 15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+								<path d="M5 5L15 15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+						</button>
+
+						<h2 class="modal__title">
+							Свяжитесь с нами любым удобным способом
+						</h2>
+						<div class="modal__card">
+							<a href="https://t.me/LabKonsalting" target="_blank">
+								<img src="./img/icons/telegramm.svg" alt="Telegram КИТ-лаб">
+							</a>
+							<a href="viber://chat?number=+375445695688" target="_blank">
+								<img src="./img/icons/viber.svg" alt="Viber КИТ-лаб">
+							</a>
+							<div class="modal__container">
+								<a class="modal__tel" href="tel:+375445695688">+375-44-569-56-88</a>
+								<a class="modal__tel" href="tel:+375333709712">+375-33-370-97-12</a>
+							</div>
+
+						</div>
+						<div class="modal__btns">
+							<button class="modal__btn">Позже</button>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -119,19 +150,20 @@
 		<main class="main">
 			<section class="area" id="area">
 				<div class="container">
+
 					<h2 class="area-title title">Услуги</h2>
 					<span class="line"></span>
-					<div class="card-wrapper">
-						<a href="accreditacia.html" class="card-link">
-							<article class="card">
 
+					<div class="card-wrapper">
+						<a href="aerodinamicheskie_ispytaniya.html" class="card-link">
+							<article class="card">
 								<div class="card-info">
 									<h3 class="card-title">Аэродинамические испытания и паспортизация</h3>
 									<p class="card-text">Замеры расхода воздуха, кратности воздухообмена, проверка соответствия
 										проектным параметрам. Оформление протоколов и паспортов систем вентиляции по ГОСТ
 										12.3.018-79. Испытания для сдачи объектов, подготовки к санитарно-гигиеническим проверкам
 										и периодического контроля.</p>
-									<img class="card-img" src="./img/icons/arrow.png" alt="">
+									<img class="card-img" src="./img/icons/arrow.png" alt="стрелка">
 								</div>
 
 							</article>
@@ -144,7 +176,7 @@
 									<p class="card-text">Определение класса герметичности воздуховодов (A, B, C, D) в
 										соответствии с СТБ 2522-2018 / EN 12237:2003. Проверка качества монтажа, выявление утечек,
 										подготовка протоколов для сдачи объектов и сертификации продукции по ТР 2025/013/BY.</p>
-									<img class="card-img" src="./img/icons/arrow.png" alt="">
+									<img class="card-img" src="./img/icons/arrow.png" alt="стрелка">
 								</div>
 							</article>
 						</a>
@@ -156,7 +188,7 @@
 									<p class="card-text">Испытания систем дымоудаления и подпора воздуха по НПБ 23-2010. Проверка
 										расхода воздуха, давления в зонах подпора, работы клапанов и времени выхода на режим.
 										Протоколы для надзорных органов и МЧС.</p>
-									<img class="card-img" src="./img/icons/arrow.png" alt="">
+									<img class="card-img" src="./img/icons/arrow.png" alt="стрелка">
 								</div>
 
 							</article>
@@ -168,7 +200,7 @@
 									<p class="card-text">Измерение микроклимата, шума, вибрации и освещённости на рабочих местах.
 										Производственный контроль и аттестация рабочих мест по условиям труда. Протоколы с
 										фактическими значениями для контролирующих органов.</p>
-									<img class="card-img" src="./img/icons/arrow.png" alt="">
+									<img class="card-img" src="./img/icons/arrow.png" alt="стрелка">
 								</div>
 							</article>
 						</a>
@@ -179,7 +211,7 @@
 									<p class="card-text">Квалификация измерительного и испытательного оборудования (IQ/OQ/PQ) для
 										фармацевтических производств. Подтверждение соответствия требованиям GMP и надлежащей
 										лабораторной практики.</p>
-									<img class="card-img" src="./img/icons/arrow.png" alt="">
+									<img class="card-img" src="./img/icons/arrow.png" alt="стрелка">
 								</div>
 							</article>
 						</a>
@@ -190,7 +222,7 @@
 									<p class="card-text">Техническое обслуживание хроматографов ВЭЖХ и ГХ, предповерочная
 										подготовка к поверке в Беларуси. Замена колонок, ламп, уплотнений, диагностика детекторов,
 										промывка систем. Подготовка к поверке для фармпроизводств и лабораторий.</p>
-									<img class="card-img" src="./img/icons/arrow.png" alt="">
+									<img class="card-img" src="./img/icons/arrow.png" alt="стрелка">
 								</div>
 							</article>
 						</a>
@@ -214,14 +246,15 @@
 								Работаем с объектами любой сложности: от жилых домов до фармацевтических производств. Выезжаем
 								по всей Беларуси.
 							</p>
-							<p class="about-text text">Работаем с объектами любой сложности: от жилых домов до фармацевтических производств. Выезжаем по всей Беларуси</p>
+							<p class="about-text text">Работаем с объектами любой сложности: от жилых домов до фармацевтических
+								производств. Выезжаем по всей Беларуси</p>
 						</div>
 						<div class="slider">
 							<div class="slides">
 								<img src="img/sertificats/1.01.webp" class="slide active" alt="Сертификат специалиста КИТ-лаб">
 								<img src="img/sertificats/1.03.webp" class="slide" alt="Сертификат специалиста КИТ-лаб">
 								<img src="img/sertificats/1.13.webp" class="slide" alt="Сертификат специалиста КИТ-лаб">
-								
+
 							</div>
 							<div class="dots"></div>
 							<button class="prev">‹</button>
@@ -238,8 +271,9 @@
 						<div class="box-wrap">
 							<article class="why-box">
 								<img src="./img/why/1.png" alt="" class="why-img">
-								<h3>Аккредитованная лаборатория</h3>
-								<p>работаем в рамках национальной системы аккредитации, протоколы принимаются надзорными органами</p>
+								<h3>Компетентная лаборатория</h3>
+								<p>работаем в рамках национальной системы аккредитации, протоколы принимаются надзорными
+									органами</p>
 							</article>
 							<article class="why-box">
 								<img src="./img/why/2.png" alt="" class="why-img">
@@ -249,12 +283,13 @@
 							<article class="why-box">
 								<img src="./img/why/3.png" alt="" class="why-img">
 								<h3>Гибкий график </h3>
-								<p>работаем без выходных и можем провести испытания в вечернее и ночное время, чтобы не останавливать ваше производство.</p>
+								<p>работаем без выходных и можем провести испытания в вечернее и ночное время, чтобы не
+									останавливать ваше производство.</p>
 							</article>
 							<article class="why-box">
 								<img src="./img/why/4.png" alt="" class="why-img">
 								<h3>Опытные специалисты</h3>
-								<p>наши специалисты имеют опыт работы от 5 лет</p>
+								<p>наши специалисты имеют опыт работы более 5 лет</p>
 							</article>
 						</div>
 					</div>
@@ -263,9 +298,10 @@
 			<section class="contact" id="contact">
 				<div class="container">
 					<div class="contact-wrapper">
+						<h2 class="title">контакты</h2>
+						<span class="line"></span>
+						<!-- <div class="contact"></div> -->
 						<div class="contact-info">
-							<h2 class="title">контакты</h2>
-							<span class="line"></span>
 							<ul class="contact-list">
 								<li>Общество с ограниченной ответственностью "КИТ-лаб"</li>
 								<li>УНП 791427133</li>
@@ -275,27 +311,29 @@
 								<li><a class="cont-link" href="mailto:kitlab.by@gmail.com">kitlab.by@gmail.com</a></li>
 								<li><a class="cont-link" href="tel:+375445695688">+375-44-569-56-88</a></li>
 								<li><a class="cont-link" href="tel:+375333709712">+375-33-370-97-12</a></li>
-
-							</ul>
-							<ul class="contact-list-flex">
+								<li>График работы: 9:00 - 19:00 (без выходных)</li>
 								<li>
-									<a href="https://t.me/LabKonsalting" target="_blank">
-										<img class="sotial-img" src="./img/icons/telegramm.svg" alt="Telegram КИТ-лаб">
-									</a>
+									<ul class="contact-list-flex">
+										<li>
+											<a href="https://t.me/LabKonsalting" target="_blank">
+												<img class="sotial-img" src="./img/icons/telegramm.svg" alt="Telegram КИТ-лаб">
+											</a>
+										</li>
+										<li><a href="viber://chat?number=+375445695688" target="_blank">
+												<img class="sotial-img" src="./img/icons/viber.svg" alt="Viber КИТ-лаб">
+											</a></li>
+									</ul>
 								</li>
-								<li><a href="viber://chat?number=+375445695688" target="_blank">
-										<img class="sotial-img" src="./img/icons/viber.svg" alt="Viber КИТ-лаб">
-									</a></li>
 							</ul>
-						</div>
-						<div class="contact-form">
-							<form id="contactForm" action="https://formspree.io/f/xvzlyvwe" method="POST">
-								<input type="text" name="name" required placeholder="Введите имя">
-								<!-- <input type="text" name="company" placeholder="Название организации"> -->
-								<input type="email" name="email" required placeholder="Email">
-								<input type="tel" name="tel" id="phone" required placeholder="+375 (__) ___-__-__"
-									pattern="^\+375\s\(\d{2}\)\s\d{3}-\d{2}-\d{2}$">
-								<!-- <div class="fieldset-wrap">
+
+							<div class="contact-form">
+								<form id="contactForm" action="https://formspree.io/f/xvzlyvwe" method="POST">
+									<input type="text" name="name" required placeholder="Введите имя">
+									<!-- <input type="text" name="company" placeholder="Название организации"> -->
+									<input type="email" name="email" required placeholder="Email">
+									<input type="tel" name="tel" id="phone" required placeholder="+375 (__) ___-__-__"
+										pattern="^\+375\s\(\d{2}\)\s\d{3}-\d{2}-\d{2}$">
+									<!-- <div class="fieldset-wrap">
 									<fieldset>
 										<legend>выберете запрос</legend>
 										<div class="checkbox-item">
@@ -320,13 +358,15 @@
 										</div>
 									</fieldset>
 								</div> -->
-								<textarea name="message" placeholder="Опишите запрос (необязательное поле)"></textarea>
+									<textarea name="message" placeholder="Опишите запрос (необязательное поле)"></textarea>
 
-								<button class="btn-form" type="submit">Отправить</button>
-							</form>
+									<button class="btn-form" type="submit">Отправить</button>
+								</form>
 
-							<p id="formStatus"></p>
+								<p id="formStatus"></p>
+							</div>
 						</div>
+
 					</div>
 				</div>
 			</section>
@@ -414,6 +454,7 @@
 							<img class="sotial-img" src="./img/icons/viber.svg" alt="Viber КИТ-лаб">
 						</a>
 					</div>
+
 				</div>
 			</div>
 			<a class="policy-privacy" href="privacy-policy.html">Политика конфиденциальности, Cookies и правовая
